@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Nova AI</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header><div class="logo">✦</div><div><b>Nova AI</b><small>Trợ lý AI của bạn</small></div><button id="settings">⚙️</button></header>
+<main id="chat"><div class="welcome"><div class="big">✦</div><h1>Xin chào 👋</h1><p>Hỏi mình bất cứ điều gì trong phạm vi an toàn. Mình sẽ cố gắng trả lời rõ ràng và hữu ích.</p></div></main>
+<form id="form"><textarea id="input" rows="1" placeholder="Nhắn tin cho Nova AI…"></textarea><button id="send">➤</button></form>
+</div>
+<dialog id="dlg"><h2>Cài đặt</h2><label>API endpoint<input id="endpoint" placeholder="https://your-server.example.com/v1/chat"></label><label>API key<input id="key" type="password" placeholder="Không nên nhúng key thật vào app công khai"></label><p class="note">Bản mẫu này gọi một backend của bạn. Không đặt khóa bí mật trực tiếp trong mã app khi phát hành.</p><button id="save">Lưu</button> <button id="close">Đóng</button></dialog>
+<script src="app.js"></script>
+</body>
+</html>
